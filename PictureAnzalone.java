@@ -9,59 +9,87 @@ PictureAnzalone.java
  *computer using some simple shapes.
  *
  * @author: Salvatore Anzalone
- * @version 2016.02.29
+ * @version: 08.31.2022
  */
 public class PictureAnzalone
 {
+    private Square table;
     private Square comPiece1;
     private Square comPiece2;
     private Square comScreen;
-    
+    private Triangle compitr;
+    private Circle mouse;
+    private Square background;
+    private Person comuser;
 
     private static Canvas canvasSingleton;
 
     /**
-     * Factory method to get the canvas singleton object.
+     * Constructor for objects of class PictureAnzalone
      */
-    public static Canvas getCanvas()
+    public PictureAnzalone()
     {
-        if(canvasSingleton == null) {
-            canvasSingleton = new Canvas("BlueJ Picture Demo", 500, 300,
-                                         Color.white);
-        }
-        canvasSingleton.setVisible(true);
-        return canvasSingleton;
+        table =  new Square();
+        background =  new Square();
+        comPiece1 =  new Square();
+        comPiece2 =  new Square();
+        comScreen =  new Square();
+        compitr =  new Triangle();
+        mouse = new Circle();
+        comuser =  new Person();
     }
 
-    //  ----- instance part -----
-
-    private JFrame frame;
-    private CanvasPane canvas;
-    private Graphics2D graphic;
-    private Color backgroundColor;
-    private Image canvasImage;
-    private List<Object> objects;
-    private HashMap<Object, ShapeDescription> shapes;
-
-    /**
-     * Create a Canvas.
-     * @param title    title to appear in Canvas Frame
-     * @param width    the desired width for the canvas
-     * @param height   the desired height for the canvas
-     * @param bgColor the desired background color of the canvas
+  /**
+     * Draw picture.
      */
-    private Canvas(String title, int width, int height, Color bgColor)
+    public void draw()
     {
-        frame = new JFrame();
-        canvas = new CanvasPane();
-        frame.setContentPane(canvas);
-        frame.setTitle(title);
-        frame.setLocation(30, 30);
-        canvas.setPreferredSize(new Dimension(width, height));
-        backgroundColor = bgColor;
-        frame.pack();
-        objects = new ArrayList<Object>();
-        shapes = new HashMap<Object, ShapeDescription>();
+        table.changeColor("grey");
+        table.moveHorizontal(-320);
+        table.changeSize(225);
+        table.makeVisible();
+
+        background.changeColor("white");
+        background.moveHorizontal(-340);
+        background.moveVertical(-550);
+        background.changeSize(550);
+        background.makeVisible();
+
+        comPiece1.changeColor("black");
+        comPiece1.moveHorizontal(-165);
+        comPiece1.moveVertical(-55);
+        comPiece1.changeSize(90);
+        comPiece1.makeVisible();
+
+        comPiece2.changeColor("black");
+        comPiece2.moveHorizontal(-85);
+        comPiece2.moveVertical(-55);
+        comPiece2.changeSize(95);
+        comPiece2.makeVisible();
+
+        comScreen.changeColor("skyblue");
+        comScreen.moveHorizontal(-85);
+        comScreen.moveVertical(-55);
+        comScreen.changeSize(90);
+        comScreen.makeVisible();
+
+        compitr.changeColor("black");
+        compitr.moveHorizontal(-80);
+        compitr.moveVertical(-55);
+        compitr.changeSize(40);
+        compitr.makeVisible();
+
+        mouse.changeColor("black");
+        mouse.moveHorizontal(-170);
+        mouse.moveVertical(-60);
+        mouse.changeSize(70);
+        mouse.makeVisible();
+
+        comuser.changeSize(80,40);
+        comuser.moveHorizontal(-94);
+        comuser.moveVertical(25);
+        comuser.makeVisible();
+
     }
 
     /**
