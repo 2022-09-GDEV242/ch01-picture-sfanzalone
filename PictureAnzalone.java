@@ -114,15 +114,19 @@ public class PictureAnzalone
     /**
      * Change picture to color display
      */
-     // Note: this is a slightly backwards way of maintaining the shape
-     // objects. It is carefully designed to keep the visible shape interfaces
-     // in this project clean and simple for educational purposes.
-    public void draw(Object referenceObject, String color, Shape shape)
+    public void setColor()
     {
-        objects.remove(referenceObject);   // just in case it was already there
-        objects.add(referenceObject);      // add at the end
-        shapes.put(referenceObject, new ShapeDescription(shape, color));
-        redraw();
+        if(background != null) //only if already painted
+        {
+          table.changeColor("grey");
+          background.changeColor("white");
+          comPiece1.changeColor("black");
+          comPiece2.changeColor("black");
+          comScreen.changeColor("skyblue");
+          compitr.changeColor("black");
+          mouse.changeColor("black");
+          comuser.changeColor("lightgrey");
+        }
     }
 
     /**
