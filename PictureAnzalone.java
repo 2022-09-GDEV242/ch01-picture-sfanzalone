@@ -85,6 +85,7 @@ public class PictureAnzalone
         mouse.changeSize(70);
         mouse.makeVisible();
 
+        comuser.changeColor("lightgrey");
         comuser.changeSize(80,40);
         comuser.moveHorizontal(-94);
         comuser.moveVertical(25);
@@ -93,32 +94,25 @@ public class PictureAnzalone
     }
 
     /**
-     * Set the canvas visibility and brings canvas to the front of screen
-     * when made visible. This method can also be used to bring an already
-     * visible canvas to the front of other windows.
-     * @param visible  boolean value representing the desired visibility of
-     * the canvas (true or false)
+     * Change picture to black/white display
      */
-    public void setVisible(boolean visible)
+    public void setBlackAndWhite()
     {
-        if(graphic == null) {
-            // first time: instantiate the offscreen image and fill it with
-            // the background color
-            Dimension size = canvas.getSize();
-            canvasImage = canvas.createImage(size.width, size.height);
-            graphic = (Graphics2D)canvasImage.getGraphics();
-            graphic.setColor(backgroundColor);
-            graphic.fillRect(0, 0, size.width, size.height);
-            graphic.setColor(Color.black);
+        if(background != null) //only if already painted
+        {
+            table.changeColor("darkgrey");
+            background.changeColor("grey");
+            comPiece1.changeColor("black");
+            comPiece2.changeColor("black");
+            comScreen.changeColor("white");
+            compitr.changeColor("black");
+            mouse.changeColor("black");
+            comuser.changeColor("lightgrey");
         }
-        frame.setVisible(visible);
     }
 
     /**
-     * Draw a given shape onto the canvas.
-     * @param  referenceObject  an object to define identity for this shape
-     * @param  color            the color of the shape
-     * @param  shape            the shape object to be drawn on the canvas
+     * Change picture to color display
      */
      // Note: this is a slightly backwards way of maintaining the shape
      // objects. It is carefully designed to keep the visible shape interfaces
