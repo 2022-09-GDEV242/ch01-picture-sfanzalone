@@ -2,12 +2,12 @@ import java.awt.*;
 
 /**
  * A triangle that can be manipulated and that draws itself on a canvas.
- * 
- * @author  Michael Kšlling and David J. Barnes
+ *
+ * @author  Michael Kï¿½lling and David J. Barnes
  * @version 2016.02.29
  */
 
-public class Triangle
+public class TriangleCompitr
 {
     private int height;
     private int width;
@@ -37,7 +37,7 @@ public class Triangle
         isVisible = true;
         draw();
     }
-    
+
     /**
      * Make this triangle invisible. If it was already invisible, do nothing.
      */
@@ -46,7 +46,7 @@ public class Triangle
         erase();
         isVisible = false;
     }
-    
+
     /**
      * Move the triangle a few pixels to the right.
      */
@@ -106,12 +106,12 @@ public class Triangle
     {
         int delta;
 
-        if(distance < 0) 
+        if(distance < 0)
         {
             delta = -1;
             distance = -distance;
         }
-        else 
+        else
         {
             delta = 1;
         }
@@ -130,12 +130,12 @@ public class Triangle
     {
         int delta;
 
-        if(distance < 0) 
+        if(distance < 0)
         {
             delta = -1;
             distance = -distance;
         }
-        else 
+        else
         {
             delta = 1;
         }

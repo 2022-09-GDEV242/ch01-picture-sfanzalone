@@ -2,12 +2,12 @@ import java.awt.*;
 
 /**
  * A person that can be manipulated and that draws itself on a canvas.
- * 
- * @author  Michael Kšlling and David J. Barnes
+ *
+ * @author  Michael Kï¿½lling and David J. Barnes
  * @version 2016.02.29
  */
 
-public class Person
+public class PersonComuser
 {
     private int height;
     private int width;
@@ -37,7 +37,7 @@ public class Person
         isVisible = true;
         draw();
     }
-    
+
     /**
      * Make this person invisible. If it was already invisible, do nothing.
      */
@@ -46,7 +46,7 @@ public class Person
         erase();
         isVisible = false;
     }
-    
+
     /**
      * Move the person a few pixels to the right.
      */
@@ -106,12 +106,12 @@ public class Person
     {
         int delta;
 
-        if(distance < 0) 
+        if(distance < 0)
         {
             delta = -1;
             distance = -distance;
         }
-        else 
+        else
         {
             delta = 1;
         }
@@ -130,12 +130,12 @@ public class Person
     {
         int delta;
 
-        if(distance < 0) 
+        if(distance < 0)
         {
             delta = -1;
             distance = -distance;
         }
-        else 
+        else
         {
             delta = 1;
         }
@@ -180,13 +180,13 @@ public class Person
         int y = yPosition;
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
-            int[] xpoints = { x-3, x-hw, x-hw, x-(int)(hw*0.2)-1, x-(int)(hw*0.2)-1, x-hw, 
-                              x-hw+(int)(hw*0.4)+1, x, x+hw-(int)(hw*0.4)-1, x+hw, x+(int)(hw*0.2)+1, 
-                              x+(int)(hw*0.2)+1, x+hw, x+hw, x+3, x+(int)(hw*0.6), 
+            int[] xpoints = { x-3, x-hw, x-hw, x-(int)(hw*0.2)-1, x-(int)(hw*0.2)-1, x-hw,
+                              x-hw+(int)(hw*0.4)+1, x, x+hw-(int)(hw*0.4)-1, x+hw, x+(int)(hw*0.2)+1,
+                              x+(int)(hw*0.2)+1, x+hw, x+hw, x+3, x+(int)(hw*0.6),
                               x+(int)(hw*0.6), x+3, x-3, x-(int)(hw*0.6), x-(int)(hw*0.6) };
-            int[] ypoints = { y, y+(int)(bh*0.2), y+(int)(bh*0.4), y+(int)(bh*0.2), 
-                              y+(int)(bh*0.5), y+bh, y+bh, y+(int)(bh*0.65), y+bh, y+bh, 
-                              y+(int)(bh*0.5), y+(int)(bh*0.2), y+(int)(bh*0.4), y+(int)(bh*0.2), 
+            int[] ypoints = { y, y+(int)(bh*0.2), y+(int)(bh*0.4), y+(int)(bh*0.2),
+                              y+(int)(bh*0.5), y+bh, y+bh, y+(int)(bh*0.65), y+bh, y+bh,
+                              y+(int)(bh*0.5), y+(int)(bh*0.2), y+(int)(bh*0.4), y+(int)(bh*0.2),
                               y, y-hh+3, y-hh-3, y-hh-hh, y-hh-hh, y-hh-3, y-hh+3 };
             canvas.draw(this, color, new Polygon(xpoints, ypoints, 21));
             canvas.wait(10);
