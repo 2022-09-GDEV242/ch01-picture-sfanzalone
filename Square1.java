@@ -7,7 +7,7 @@ import java.awt.*;
  * @version 2016.02.29
  */
 
-public class SquareTable
+public class SquareBackground
 {
     private int size;
     private int xPosition;
