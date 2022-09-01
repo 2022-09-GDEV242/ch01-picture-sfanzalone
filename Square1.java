@@ -20,11 +20,11 @@ public class SquareBackground
      */
     public Square()
     {
-        size = 60;
-        xPosition = 310;
-        yPosition = 120;
-        color = "red";
-        isVisible = false;
+        size = 550;
+        xPosition = -340;
+        yPosition = -550;
+        color = "white";
+        isVisible = true;
     }
 
     /**
@@ -47,34 +47,34 @@ public class SquareBackground
 
     /**
      * Move the square a few pixels to the right.
-     */
+
     public void moveRight()
     {
         moveHorizontal(20);
-    }
+    }*/
 
     /**
      * Move the square a few pixels to the left.
      */
     public void moveLeft()
     {
-        moveHorizontal(-20);
+        moveHorizontal(-340);
     }
 
     /**
      * Move the square a few pixels up.
-     */
+
     public void moveUp()
     {
-        moveVertical(-20);
-    }
+        moveVertical(20);
+    }*/
 
     /**
      * Move the square a few pixels down.
      */
     public void moveDown()
     {
-        moveVertical(20);
+        moveVertical(-550);
     }
 
     /**
