@@ -20,11 +20,11 @@ public class SquareTable
      */
     public Square()
     {
-        size = 60;
-        xPosition = 310;
-        yPosition = 120;
-        color = "red";
-        isVisible = false;
+        size = 225;
+        xPosition = -320;
+        yPosition = 0;
+        color = "grey";
+        isVisible = true;
     }
 
     /**
@@ -47,35 +47,35 @@ public class SquareTable
 
     /**
      * Move the square a few pixels to the right.
-     */
+
     public void moveRight()
     {
         moveHorizontal(20);
-    }
+    }*/
 
     /**
      * Move the square a few pixels to the left.
      */
     public void moveLeft()
     {
-        moveHorizontal(-20);
+        moveHorizontal(-320);
     }
 
     /**
      * Move the square a few pixels up.
-     */
+
     public void moveUp()
     {
         moveVertical(-20);
     }
 
-    /**
+
      * Move the square a few pixels down.
-     */
+
     public void moveDown()
     {
         moveVertical(20);
-    }
+    }*/
 
     /**
      * Move the square horizontally by 'distance' pixels.
@@ -89,13 +89,13 @@ public class SquareTable
 
     /**
      * Move the square vertically by 'distance' pixels.
-     */
+
     public void moveVertical(int distance)
     {
         erase();
         yPosition += distance;
         draw();
-    }
+    }*/
 
     /**
      * Slowly move the square horizontally by 'distance' pixels.
@@ -123,7 +123,7 @@ public class SquareTable
 
     /**
      * Slowly move the square vertically by 'distance' pixels.
-     */
+
     public void slowMoveVertical(int distance)
     {
         int delta;
@@ -145,7 +145,7 @@ public class SquareTable
         }
     }
 
-    /**
+
      * Change the size to the new size (in pixels). Size must be >= 0.
      */
     public void changeSize(int newSize)
