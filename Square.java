@@ -158,12 +158,12 @@ public class SquareTable
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
      * "magenta" and "black".
-     */
+
     public void changeColor(String newColor)
     {
         color = newColor;
         draw();
-    }
+    }*/
 
     /**
      * Draw the square with current specifications on screen.
