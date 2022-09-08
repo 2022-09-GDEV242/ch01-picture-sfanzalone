@@ -4,7 +4,7 @@ import java.awt.*;
  * A square that can be manipulated and that draws itself on a canvas.
  *
  * @author  Salvatore Anzalone
- * @version 09.01.2022
+ * @version 09.08.2022
  */
 
 public class SquareBackground
@@ -47,11 +47,12 @@ public class SquareBackground
 
     /**
      * Move the square a few pixels to the right.
+     */
 
     public void moveRight()
     {
         moveHorizontal(20);
-    }*/
+    }
 
     /**
      * Move the square a few pixels to the left.
@@ -63,11 +64,12 @@ public class SquareBackground
 
     /**
      * Move the square a few pixels up.
+     */
 
     public void moveUp()
     {
         moveVertical(20);
-    }*/
+    }
 
     /**
      * Move the square a few pixels down.
