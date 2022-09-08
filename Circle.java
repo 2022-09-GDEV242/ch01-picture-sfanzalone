@@ -5,7 +5,7 @@ import java.awt.geom.*;
  * A circle that can be manipulated and that draws itself on a canvas.
  *
  * @author  Salvatore Anzalone
- * @version 09.01.2022
+ * @version 09.08.2022
  */
 
 public class CircleMouse
@@ -24,7 +24,7 @@ public class CircleMouse
         diameter = 68;
         xPosition = 230;
         yPosition = 90;
-        color = "blue";
+        color = "black";
     }
 
     /**
