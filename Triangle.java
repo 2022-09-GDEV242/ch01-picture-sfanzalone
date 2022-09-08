@@ -25,7 +25,7 @@ public class TriangleCompitr
         width = 70;
         xPosition = 210;
         yPosition = 140;
-        color = "green";
+        color = "black";
         isVisible = false;
     }
 
