@@ -111,4 +111,22 @@ public class Picture
         }
     }
 
+    /**
+     * Change this picture to use color display
+     */
+    public void setColor()
+    {
+        if (background != null)   // only if it's painted already...
+        {
+            table.changeColor("grey");
+            background.changeColor("white");
+            comPiece1.changeColor("black");
+            comPiece2.changeColor("black");
+            comScreen.changeColor("skyblue");
+            compitr.changeColor("black");
+            mouse.changeColor("black");
+            comuser.changeColor("lightgrey");
+        }
+    }
+
 }
