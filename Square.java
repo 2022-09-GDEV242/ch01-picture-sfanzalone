@@ -4,7 +4,7 @@ import java.awt.*;
  * A square that can be manipulated and that draws itself on a canvas.
  *
  * @author  Salvatore Anzalone
- * @version 09.01.2022
+ * @version 09.08.2022
  */
 
 public class SquareTable
@@ -47,11 +47,12 @@ public class SquareTable
 
     /**
      * Move the square a few pixels to the right.
+     */
 
     public void moveRight()
     {
         moveHorizontal(20);
-    }*/
+    }
 
     /**
      * Move the square a few pixels to the left.
@@ -63,6 +64,7 @@ public class SquareTable
 
     /**
      * Move the square a few pixels up.
+     */
 
     public void moveUp()
     {
@@ -75,7 +77,7 @@ public class SquareTable
     public void moveDown()
     {
         moveVertical(20);
-    }*/
+    }
 
     /**
      * Move the square horizontally by 'distance' pixels.
@@ -89,13 +91,14 @@ public class SquareTable
 
     /**
      * Move the square vertically by 'distance' pixels.
+     */
 
     public void moveVertical(int distance)
     {
         erase();
         yPosition += distance;
         draw();
-    }*/
+    }
 
     /**
      * Slowly move the square horizontally by 'distance' pixels.
@@ -123,6 +126,7 @@ public class SquareTable
 
     /**
      * Slowly move the square vertically by 'distance' pixels.
+     */
 
     public void slowMoveVertical(int distance)
     {
@@ -145,7 +149,7 @@ public class SquareTable
         }
     }
 
-
+    /**
      * Change the size to the new size (in pixels). Size must be >= 0.
      */
     public void changeSize(int newSize)
@@ -158,12 +162,13 @@ public class SquareTable
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
      * "magenta" and "black".
+     */
 
     public void changeColor(String newColor)
     {
         color = newColor;
         draw();
-    }*/
+    }
 
     /**
      * Draw the square with current specifications on screen.
@@ -183,7 +188,8 @@ public class SquareTable
      */
     private void erase()
     {
-        if(isVisible) {
+        if(isVisible)
+        {
             Canvas canvas = Canvas.getCanvas();
             canvas.erase(this);
         }
