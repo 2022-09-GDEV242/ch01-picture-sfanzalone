@@ -23,7 +23,7 @@ public class SquareComScreen
         size = 60;
         xPosition = 310;
         yPosition = 120;
-        color = "red";
+        color = "skyblue";
         isVisible = false;
     }
 
