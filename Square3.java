@@ -23,7 +23,7 @@ public class SquareComPiece2
         size = 60;
         xPosition = 310;
         yPosition = 120;
-        color = "red";
+        color = "black";
         isVisible = false;
     }
 
