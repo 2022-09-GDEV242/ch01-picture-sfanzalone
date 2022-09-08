@@ -25,7 +25,7 @@ public class PersonComuser
         width = 30;
         xPosition = 280;
         yPosition = 190;
-        color = "black";
+        color = "lightgrey";
         isVisible = false;
     }
 
