@@ -9,7 +9,7 @@ Picture.java
  *computer using some simple shapes.
  *
  * @author: Salvatore Anzalone
- * @version: 08.31.2022
+ * @version: 09.08.2022
  */
 public class Picture
 {
