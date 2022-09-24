@@ -11,11 +11,14 @@
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
-    private Circle sun02;
+    private Square table;
+    private Square comPiece1;
+    private Square comPiece2;
+    private Square comScreen;
+    private Triangle compitr;
+    private Circle mouse;
+    private Square background;
+    private Person comuser;
     private boolean drawn;
 
     /**
@@ -23,11 +26,14 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
-        sun = new Circle();
-        sun02 = new Circle();
+        table =  new Square();
+        background =  new Square();
+        comPiece1 =  new Square();
+        comPiece2 =  new Square();
+        comScreen =  new Square();
+        compitr =  new Triangle();
+        mouse = new Circle();
+        comuser =  new Person();
         drawn = false;
     }
 
@@ -36,34 +42,55 @@ public class Picture
      */
     public void draw()
     {
-        if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
+        if(!drawn)
+        {
+            table.changeColor("grey");
+            table.moveHorizontal(-320);
+            table.changeSize(225);
+            table.makeVisible();
+
+            background.changeColor("white");
+            background.moveHorizontal(-340);
+            background.moveVertical(-550);
+            background.changeSize(550);
+            background.makeVisible();
+
+            comPiece1.changeColor("black");
+            comPiece1.moveHorizontal(-165);
+            comPiece1.moveVertical(-55);
+            comPiece1.changeSize(90);
+            comPiece1.makeVisible();
+
+            comPiece2.changeColor("black");
+            comPiece2.moveHorizontal(-85);
+            comPiece2.moveVertical(-55);
+            comPiece2.changeSize(95);
+            comPiece2.makeVisible();
+
+            comScreen.changeColor("skyblue");
+            comScreen.moveHorizontal(-85);
+            comScreen.moveVertical(-55);
+            comScreen.changeSize(90);
+            comScreen.makeVisible();
+
+            compitr.changeColor("black");
+            compitr.moveHorizontal(-80);
+            compitr.moveVertical(-55);
+            compitr.changeSize(40);
+            compitr.makeVisible();
+
+            mouse.changeColor("black");
+            mouse.moveHorizontal(-170);
+            mouse.moveVertical(-60);
+            mouse.changeSize(70);
+            mouse.makeVisible();
+
+            comuser.changeColor("lightgrey");
+            comuser.changeSize(80,40);
+            comuser.moveHorizontal(-94);
+            comuser.moveVertical(25);
+            comuser.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
-    
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
-    
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
-            
-            sun02.changeColor("blue");
-            sun02.moveHorizontal(-100);
-            sun02.moveVertical(-140);
-            sun02.changeSize(180);
-            sun02.makeVisible();
             drawn = true;
         }
     }
@@ -73,10 +100,14 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
+        table.changeColor("darkgrey");
+        background.changeColor("grey");
+        comPiece1.changeColor("black");
+        comPiece2.changeColor("black");
+        comScreen.changeColor("white");
+        compitr.changeColor("black");
+        mouse.changeColor("black");
+        comuser.changeColor("lightgrey");
     }
 
     /**
@@ -84,9 +115,13 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+        table.changeColor("grey");
+        background.changeColor("white");
+        comPiece1.changeColor("black");
+        comPiece2.changeColor("black");
+        comScreen.changeColor("skyblue");
+        compitr.changeColor("black");
+        mouse.changeColor("black");
+        comuser.changeColor("lightgrey");
     }
 }
