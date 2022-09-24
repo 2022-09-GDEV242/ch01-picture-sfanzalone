@@ -52,17 +52,19 @@ public class Picture
             comPiece1.moveVertical(-55);
             comPiece1.changeSize(45);
             comPiece1.makeVisible();
+            //This object won't be seen, but the
+            //final product did turn out great in the end.
 
             comPiece2.changeColor("black");
             comPiece2.moveHorizontal(-85);
             comPiece2.moveVertical(-55);
-            comPiece2.changeSize(48);
+            comPiece2.changeSize(50);
             comPiece2.makeVisible();
 
             comScreen.changeColor("blue");
             comScreen.moveHorizontal(-83);
             comScreen.moveVertical(-55);
-            comScreen.changeSize(30);
+            comScreen.changeSize(40);
             comScreen.makeVisible();
 
             compitr.changeColor("black");
@@ -78,9 +80,9 @@ public class Picture
             mouse.makeVisible();
 
             comuser.changeColor("green");
-            comuser.changeSize(160,80);
+            comuser.changeSize(205,80);
             comuser.moveHorizontal(-140);
-            comuser.moveVertical(-70);
+            comuser.moveVertical(-100);
             comuser.makeVisible();
             
             drawn = true;
@@ -93,7 +95,7 @@ public class Picture
     public void setBlackAndWhite()
     {
         table.changeColor("darkgrey");
-        comPiece1.changeColor("black");
+        comPiece1.changeColor("white");
         comPiece2.changeColor("black");
         comScreen.changeColor("white");
         compitr.changeColor("black");
