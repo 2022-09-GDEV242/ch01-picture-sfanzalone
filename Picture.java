@@ -17,7 +17,6 @@ public class Picture
     private Square comScreen;
     private Triangle compitr;
     private Circle mouse;
-    private Square background;
     private Person comuser;
     private boolean drawn;
 
@@ -45,25 +44,25 @@ public class Picture
         {
             table.changeColor("brown");
             table.moveHorizontal(-140);
-            table.changeSize(225);
+            table.changeSize(113);
             table.makeVisible();
 
             comPiece1.changeColor("white");
             comPiece1.moveHorizontal(-165);
             comPiece1.moveVertical(-55);
-            comPiece1.changeSize(90);
+            comPiece1.changeSize(45);
             comPiece1.makeVisible();
 
             comPiece2.changeColor("black");
             comPiece2.moveHorizontal(-85);
             comPiece2.moveVertical(-55);
-            comPiece2.changeSize(95);
+            comPiece2.changeSize(48);
             comPiece2.makeVisible();
 
-            comScreen.changeColor("skyblue");
+            comScreen.changeColor("blue");
             comScreen.moveHorizontal(-85);
             comScreen.moveVertical(-55);
-            comScreen.changeSize(90);
+            comScreen.changeSize(35);
             comScreen.makeVisible();
 
             compitr.changeColor("black");
@@ -73,9 +72,9 @@ public class Picture
             compitr.makeVisible();
 
             mouse.changeColor("red");
-            mouse.moveHorizontal(-170);
-            mouse.moveVertical(-60);
-            mouse.changeSize(70);
+            mouse.moveHorizontal(-96);
+            mouse.moveVertical(23);
+            mouse.changeSize(35);
             mouse.makeVisible();
 
             comuser.changeColor("green");
