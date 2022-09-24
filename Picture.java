@@ -48,7 +48,7 @@ public class Picture
             table.makeVisible();
 
             comPiece1.changeColor("white");
-            comPiece1.moveHorizontal(-165);
+            comPiece1.moveHorizontal(-83);
             comPiece1.moveVertical(-55);
             comPiece1.changeSize(45);
             comPiece1.makeVisible();
@@ -66,7 +66,7 @@ public class Picture
             comScreen.makeVisible();
 
             compitr.changeColor("black");
-            compitr.moveHorizontal(-90);
+            compitr.moveHorizontal(-83);
             compitr.moveVertical(-55);
             compitr.changeSize(10,20);
             compitr.makeVisible();
@@ -79,8 +79,8 @@ public class Picture
 
             comuser.changeColor("green");
             comuser.changeSize(160,80);
-            comuser.moveHorizontal(-94);
-            comuser.moveVertical(25);
+            comuser.moveHorizontal(-90);
+            comuser.moveVertical(70);
             comuser.makeVisible();
             
             drawn = true;
