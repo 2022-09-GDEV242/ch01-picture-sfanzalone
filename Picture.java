@@ -6,8 +6,8 @@
  *
  * This class was written as an early example for teaching Java with BlueJ.
  * 
- * @author  Michael Kšlling and David J. Barnes
- * @version 2016.02.29
+ * @author  Salvatore Anzalone
+ * @version 9.24.2022
  */
 public class Picture
 {
@@ -27,7 +27,6 @@ public class Picture
     public Picture()
     {
         table =  new Square();
-        background =  new Square();
         comPiece1 =  new Square();
         comPiece2 =  new Square();
         comScreen =  new Square();
@@ -44,18 +43,12 @@ public class Picture
     {
         if(!drawn)
         {
-            table.changeColor("grey");
-            table.moveHorizontal(-320);
+            table.changeColor("brown");
+            table.moveHorizontal(-140);
             table.changeSize(225);
             table.makeVisible();
 
-            background.changeColor("white");
-            background.moveHorizontal(-340);
-            background.moveVertical(-550);
-            background.changeSize(550);
-            background.makeVisible();
-
-            comPiece1.changeColor("black");
+            comPiece1.changeColor("white");
             comPiece1.moveHorizontal(-165);
             comPiece1.moveVertical(-55);
             comPiece1.changeSize(90);
@@ -76,16 +69,16 @@ public class Picture
             compitr.changeColor("black");
             compitr.moveHorizontal(-80);
             compitr.moveVertical(-55);
-            compitr.changeSize(40);
+            compitr.changeSize(20,40);
             compitr.makeVisible();
 
-            mouse.changeColor("black");
+            mouse.changeColor("red");
             mouse.moveHorizontal(-170);
             mouse.moveVertical(-60);
             mouse.changeSize(70);
             mouse.makeVisible();
 
-            comuser.changeColor("lightgrey");
+            comuser.changeColor("green");
             comuser.changeSize(80,40);
             comuser.moveHorizontal(-94);
             comuser.moveVertical(25);
@@ -101,7 +94,6 @@ public class Picture
     public void setBlackAndWhite()
     {
         table.changeColor("darkgrey");
-        background.changeColor("grey");
         comPiece1.changeColor("black");
         comPiece2.changeColor("black");
         comScreen.changeColor("white");
@@ -115,13 +107,12 @@ public class Picture
      */
     public void setColor()
     {
-        table.changeColor("grey");
-        background.changeColor("white");
-        comPiece1.changeColor("black");
+        table.changeColor("brown");
+        comPiece1.changeColor("white");
         comPiece2.changeColor("black");
-        comScreen.changeColor("skyblue");
+        comScreen.changeColor("blue");
         compitr.changeColor("black");
-        mouse.changeColor("black");
-        comuser.changeColor("lightgrey");
+        mouse.changeColor("red");
+        comuser.changeColor("green");
     }
 }
