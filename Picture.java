@@ -62,7 +62,7 @@ public class Picture
             comScreen.changeColor("blue");
             comScreen.moveHorizontal(-85);
             comScreen.moveVertical(-55);
-            comScreen.changeSize(35);
+            comScreen.changeSize(30);
             comScreen.makeVisible();
 
             compitr.changeColor("black");
@@ -72,9 +72,9 @@ public class Picture
             compitr.makeVisible();
 
             mouse.changeColor("red");
-            mouse.moveHorizontal(-96);
+            mouse.moveHorizontal(-48);
             mouse.moveVertical(23);
-            mouse.changeSize(35);
+            mouse.changeSize(25);
             mouse.makeVisible();
 
             comuser.changeColor("green");
