@@ -66,7 +66,7 @@ public class Picture
             comScreen.makeVisible();
 
             compitr.changeColor("black");
-            compitr.moveHorizontal(70);
+            compitr.moveHorizontal(30);
             compitr.moveVertical(-55);
             compitr.changeSize(10,20);
             compitr.makeVisible();
@@ -79,7 +79,7 @@ public class Picture
 
             comuser.changeColor("green");
             comuser.changeSize(160,80);
-            comuser.moveHorizontal(-95);
+            comuser.moveHorizontal(-120);
             comuser.moveVertical(-70);
             comuser.makeVisible();
             
